@@ -1,33 +1,40 @@
 .animation-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.floating-icon {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  opacity: 1;
+  filter: blur(0); /* Start without blur */
+  transition: filter 2s ease-in-out, transform 4s ease-in-out; /* Smooth blur and movement */
+  animation: float 4s ease-in-out infinite, blurEffect 6s infinite alternate; /* Add blurEffect animation */
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
   }
-  
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
+  50% {
+    transform: translateY(-10px);
   }
-  .floating-icon {
-    position: relative;
-    width: 70px;
-    height: 70px;
-    opacity: 0;
-    transition: opacity 2s ease-in-out; 
+  100% {
+    transform: translateY(0);
   }
-  
-  .visible-icon {
-    opacity: 1; 
+}
+
+@keyframes blurEffect {
+  0%, 100% {
+    filter: blur(0); /* No blur at start and end */
   }
-  
-  .fading-icon {
-    opacity: 0; 
+  50% {
+    filter: blur(5px); /* Maximum blur in the middle */
   }
-  
+}

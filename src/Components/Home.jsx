@@ -1,5 +1,5 @@
 import React from 'react';
-// import ParticleIcons from './ParticleIcons';
+import ParticleIcons from './ParticleIcons.jsx';
 import { BackgroundBeamsDemo } from './BackgroundBeamsDemo';
 import './home.css'
 import ImageAligned from './ImageAligned';
@@ -7,18 +7,18 @@ import ImageAligned from './ImageAligned';
 function Home() {
   return (
     <div className="home-container">
-      <div className="background" style={{ margin: 0,padding: 0}}>
+      <div className="background" style={{ height: '105%', width: '105%' }}>
         <BackgroundBeamsDemo />
       </div>
 
-      <div className="particles-container" style={{ margin: 0,padding: 0}}>
-        {/* <ParticleIcons /> */}
+      <div className="particles-container" style={{ zIndex:1,}} >
+        <ParticleIcons />
       </div>
 
       <div className="content" style={{ color:'red'}}>
-        <h1>Welcome to My Portfolio</h1>
-        <p>Check out my projects below!</p>
-        <ImageAligned/>
+        <div style={{marginLeft:"-75%"}}>
+        <ImageAligned />
+        </div>
       </div>
     </div>
   );
