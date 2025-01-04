@@ -1,53 +1,57 @@
-/* Reset styles to remove unwanted spacing */
+/* Reset styles */
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
 }
 
-/* Ensure the home container fills the entire screen */
+/* Home container */
 .home-container {
   position: relative;
   height: 100vh;
   width: 100%;
   overflow: hidden;
-  background-color: white; /* Ensures the background is white */
+  background-color: white;
 }
 
-/* Background (placed behind everything) */
+/* Background layer */
 .background {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  z-index: -6; /* Lowest layer */
-  background-color: white; /* Keeps the background white */
+  z-index: -6;
 }
 
+/* Particles layer */
 .particles-container {
-  position: relative; 
+  position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  /* pointer-events: none;   */
+  z-index: 2; /* Above background */
+  pointer-events: none;
 }
 
-.animation-container {
-  position: relative;
-  z-index: -1; /* Make sure it’s above the particles */
+/* Image background layer */
+.image-background {
+  position: absolute;
+  top: 50%; /* Vertically centered */
+  left: 12%; /* Align to the left */
+  transform: translateY(-50%); /* Center vertically */
+  z-index: 3; /* Above particles */
+  opacity: 0.9;
 }
 
-/* Main content container */
-.content {
-  position: relative;
-  z-index: 2; /* Ensure it’s above everything else */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-  color: black;
+/* Text content layer */
+.text-content {
+  position: absolute;
+  top: 50%;
+  right: 5%; /* Align closer to the right */
+  transform: translateY(-50%);
+  z-index: 4; /* Top-most layer */
+  font-size: 24px;
+  font-weight: bold;
+  color: red;
 }
