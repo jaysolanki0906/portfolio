@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-import Header from './Components/Header';
+// import Header from './Components/Header';
 import Splash from "./Components/Splash";
 import Home from "./Components/Home";
 import Education from "./Components/Education";
@@ -14,7 +14,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Header />
+        {/* <Header /> */}
         <Routes>
           <Route path="/" element={<Splash />} />
           <Route path="/home" element={<Home />} />

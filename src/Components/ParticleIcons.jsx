@@ -5,8 +5,8 @@ const ParticleIcons = () => {
   return (
     <div style={{ position: 'relative', overflow: 'hidden', height: '100vh', width: '100vw' }}>
       <div className="animation-container">
-        <img src={require('./images/R.png')} alt="React" className="floating-icon" style={{ top: '10%', left: '30%' }} />
-        <img src={require('./images/html.jpg')} alt="HTML5" className="floating-icon" style={{ top: '15%', left: '40%' }} />
+        <img src={require('./images/R.png')} alt="React" className="floating-icon" style={{ top: '20%', left: '30%' }} />
+        <img src={require('./images/html.jpg')} alt="HTML5" className="floating-icon" style={{ top: '18%', left: '40%' }} />
         <img src={require('./images/css.png')} alt="CSS3" className="floating-icon" style={{ top: '20%', left: '60%' }} />
         <img src={require('./images/Aws.png')} alt="AWS" className="floating-icon" style={{ top: '25%', left: '80%' }} />
         <img src={require('./images/c.png')} alt="C" className="floating-icon" style={{ top: '30%', left: '30%' }} />

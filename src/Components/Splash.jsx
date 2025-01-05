@@ -4,13 +4,12 @@ import './Splashscr.css';
 
 function Splash() {
   const [text, setText] = useState('');
-  const txt = 'Poortfolio Website'; // Corrected typo
+  const txt = 'Poortfolio Website'; 
   const speed = 100;
 
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Navigate to home after 6 seconds
     const timer = setTimeout(() => {
       navigate('/home');
     }, 6000);
@@ -34,7 +33,6 @@ function Splash() {
   }, []);
 
   useEffect(() => {
-    // Ensure visibility of text container after fade-in animation
     const textContainer = document.querySelector('.text-container');
     textContainer.style.opacity = '1';
   }, []);
