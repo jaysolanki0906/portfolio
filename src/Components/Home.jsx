@@ -33,7 +33,7 @@ function Home() {
         <i className="slim-text" style={{fontWeight:1}}>Hello Everyone!</i>
         <div class="name-container">
           <span class="animation name">Jay Solanki</span>&nbsp;&nbsp;&nbsp;&nbsp;
-          <span class="name">Hear...</span>
+          <span class="name">Here...</span>
       </div>
       </div>
       <div className='intorcontent'>
