@@ -23,7 +23,6 @@ function AppContent() {
 
   return (
     <div className="App">
-      {/* Render Header only if the current route is not "/" (Splash) or "/home" */}
       {location.pathname !== "/" && location.pathname !== "/home" && <Header />}
       <Routes>
         <Route path="/" element={<Splash />} />
