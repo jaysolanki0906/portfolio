@@ -4,14 +4,13 @@
     display: flex;
     justify-content: left;
     align-items: left;
-    /* background: #0609d1;  */
     margin-left: -900;
   }
   
   .rope {
     position: absolute;
     top: 0;
-    left: 50%;
+    left: 0%;
     width: 4px;
     height: 50%;
     background: #8b4513;

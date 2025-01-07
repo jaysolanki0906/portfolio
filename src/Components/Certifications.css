@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  flex-direction: column; /* Stack certificate sections vertically */
+  gap: 30px; 
+  margin: 20px;
+  align-items: center; 
+}
+.headingcerti{
+  font-size: 50px;
+}
+
+.certificate-section {
+  text-align: center; 
+  width: 100%;
+}
+.h2cerri{
+  margin-top:5px;
+  font-size: 20px;
+}
+.abcxyz{
+  font-family:cursive;
+  font-size: 25px;
+}
+
+.box {
+  background-color: #fff;
+  border-radius: 20px; 
+  box-shadow: 0 4px 8px rgba(0, 128, 0, 0.5); 
+  padding: 20px;
+  text-align: center;
+  width: 550px; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-left: 450px;
+}
+
+.box:hover {
+  transform: scale(1.05); /* Slightly enlarges the box on hover */
+  box-shadow: 0 6px 12px rgba(0, 128, 0, 0.7); /* Enhances the shadow on hover */
+}
+
+.box img {
+  width: 100%;
+  border-radius: 15px; /* Adds rounding to the images as well */
+  margin-bottom: 15px;
+}
+
+.box p {
+  font-size: 14px;
+  font-weight: bold;
+  color: #555;
+}

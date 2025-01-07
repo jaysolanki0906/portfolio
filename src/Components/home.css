@@ -6,17 +6,17 @@
 .home-container {
   position: relative;
   height: 1080px; /* Fixed height */
-  width: 1920px; /* Fixed width */
-  /* overflow: hidden; */
+  width: 1920px; 
   background-color: white;
+  border:none;
 }
 
 .background {
   position: absolute;
   top: 0;
   left: 0;
-  height: 1080px; /* Match fixed container height */
-  width: 1920px; /* Match fixed container width */
+  height: 1080px; 
+  width: 1920px; 
   z-index: -6;
 }
 
@@ -32,8 +32,8 @@
 
 .image-background {
   position: absolute;
-  top: 400px; /* Center vertically (50% of 1080px) */
-  left: 230px; /* Absolute positioning */
+  top: 350px; 
+  left: 180px; 
   transform: translateY(-50%);
   z-index: 3;
   opacity: 0.9;
@@ -41,8 +41,8 @@
 
 .text-content {
   position: absolute;
-  top: 200px; /* Absolute positioning */
-  right: 500px; /* Fixed distance */
+  top: 200px; 
+  right: 400px; 
   z-index: 4;
   font-weight: 100;
 }
@@ -88,7 +88,7 @@
   position: absolute;
   font-family: 'Freestyle Script', cursive;
   top: 450px;
-  left: 490px;
+  left: 360px;
   width: 1000px;
   color: rgba(0, 0, 0, 0.863);
   font-size: 35px;
@@ -98,13 +98,14 @@
 .DownloadResumeButton {
   position: absolute;
   top: 590px;
-  left: 800px;
+  left: 600px;
   height: 50px;
   font-size: 20px;
   border-radius: 50px;
   background-color: rgba(204, 229, 219, 0.123);
   border: none;
   width: 300px;
+  z-index: 3;
 }
 
 .DownloadResumeButton:hover {
