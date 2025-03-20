@@ -1,10 +1,15 @@
-import React from "react";
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import React, { useState } from "react";
+import { Link } from "react-router-dom"; 
 import "./header.css";
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(true);
   return (
     <header>
+      <div className="menu-icon" onClick={() => setIsOpen(!isOpen)}>
+          ☰
+        </div>
+        <nav className={isOpen ? "nav-links open" : "nav-links"}>
       <div className="OneLine">
         <div className="leftside">
           <div className="wrapper">
@@ -48,6 +53,7 @@ const Header = () => {
           </div>
         </div>
       </div>
+      </nav>
     </header>
   );
 };

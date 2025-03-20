@@ -87,9 +87,9 @@
 .intorcontent {
   position: absolute;
   font-family: 'Freestyle Script', cursive;
-  top: 450px;
-  left: 360px;
-  width: 1000px;
+  top: 100%;
+  left: 30%;
+  width: 52.08%;
   color: rgba(0, 0, 0, 0.863);
   font-size: 15px;
   z-index: 3;

@@ -8,6 +8,7 @@
   border-radius: 10px;
 }
 
+
 .leftside, .rightside {
   display: flex;
   flex-direction: row;
@@ -92,4 +93,10 @@ p {
 .wrapper:hover .shadow {
   opacity: 0;
   transform: translateY(200%);
+}
+@media screen and (max-width: 768px) {
+  .OneLine {
+    flex-direction: column;  
+    text-align: center;
+  }
 }

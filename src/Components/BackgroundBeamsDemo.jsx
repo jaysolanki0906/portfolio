@@ -21,7 +21,7 @@ export function BackgroundBeamsDemo() {
             <stop offset="100%" style={{ stopColor: "#000", stopOpacity: 1 }} />
           </radialGradient>
         </defs>
-        <rect width="100%" height="100%" fill="url(#grad1)" />
+        {/* <rect width="100%" height="100%" fill="url(#grad1)" /> */}
       </svg>
     </div>
   );
