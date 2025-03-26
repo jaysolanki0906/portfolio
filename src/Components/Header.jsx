@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header>
       <div className="menu-icon" onClick={() => setIsOpen(!isOpen)}>
-          ☰
+          
         </div>
         <nav className={isOpen ? "nav-links open" : "nav-links"}>
       <div className="OneLine">
